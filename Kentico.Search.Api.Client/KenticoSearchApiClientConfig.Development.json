@@ -1,0 +1,5 @@
+{
+  "KenticoSearchApiClientConfig": {
+    "ApiEndpoint": "https://localhost:5001/KenticoSearch"
+  }
+}

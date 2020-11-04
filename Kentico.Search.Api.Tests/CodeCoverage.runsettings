@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+    <DataCollectionRunSettings>
+        <DataCollectors>
+            <!--https://github.com/tonerdo/coverlet/blob/master/Documentation/VSTestIntegration.md-->
+            <DataCollector friendlyName="XPlat code coverage">
+                <Configuration>
+                    <!--https://github.com/tonerdo/coverlet/blob/master/Documentation/MSBuildIntegration.md#excluding-from-coverage-->
+                    <Exclude></Exclude>
+                </Configuration>
+            </DataCollector>
+        </DataCollectors>
+    </DataCollectionRunSettings>
+</RunSettings>

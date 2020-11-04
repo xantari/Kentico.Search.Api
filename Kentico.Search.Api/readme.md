@@ -1,0 +1,1 @@
+﻿# Kentico.Search.Api

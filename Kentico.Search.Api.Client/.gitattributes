@@ -1,0 +1,7 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+# 11/3/2019 - MRO: Since NSwag perpetually generates clients with .LF's, force it to leave it as is so that our
+# autocrlf=true setting in global Git doesn't keep counting this is a file that will be changed.
+Contracts.g.cs text eol=lf
+Client.g.cs text eol=lf

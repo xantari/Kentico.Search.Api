@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Configurations>Debug;Release;Development;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.4.4" />
+    <PackageReference Include="Kentico.Kontent.Management" Version="2.1.1-beta1" />
+    <PackageReference Include="Microsoft.Azure.Search" Version="10.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.7" />
+    <PackageReference Include="UrlBase64" Version="0.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kentico.Common\Kentico.Common.csproj" />
+    <ProjectReference Include="..\Kentico.Search.Api.Models\Kentico.Search.Api.Models.csproj" />
+    <ProjectReference Include="..\Kentico.Web.Models\Kentico.Web.Models.csproj" />
+  </ItemGroup>
+
+</Project>

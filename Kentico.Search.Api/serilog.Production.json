@@ -1,0 +1,13 @@
+{
+  "Serilog": {
+    "WriteTo": [
+      {
+        "Name": "Seq",
+        "Args": { "serverUrl": "http://localhost:15341" }
+      }
+    ],
+    "Properties": {
+      "Environment": "Production"
+    }
+  }
+}

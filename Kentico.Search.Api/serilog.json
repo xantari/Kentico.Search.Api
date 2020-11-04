@@ -1,0 +1,34 @@
+{
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": { /*Reduce the chatter from EF Core so we don't log all successful EF query SQL!*/
+        "Microsoft.EntityFrameworkCore.Infrastructure": "Warning",
+        "Microsoft.EntityFrameworkCore.Database": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Seq",
+        "Args": { "serverUrl": "http://localhost:5341" } // production "http://localhost:15341".  // dev "http://localhost:5341"
+      },
+      {
+        "Name": "Console"
+      }
+    ],
+    "Enrich": [
+      "FromLogContext", //Adds TraceId/SpanId built in .NET Core tracing
+      "WithEnvironmentUserName", //Serilog.Enrichers.Environment
+      "WithMachineName", //Serilog.Enrichers.Environment
+      "WithProcessId", //Serilog.Enrichers.Process
+      "WithUserName",
+      "WithHttpRequestClientHostIP", //From EnrichDiagnosticContext in Startup.cs
+      "WithHttpRequestTraceId",
+      "WithHttpRequestUrl" //From EnrichDiagnosticContext in Startup.cs
+    ],
+    "Properties": {
+      //Application attribute cannot be defined here. You must set it on the calling application during app start
+      "Environment": "Development" // production "Production".  // dev "Development"
+    }
+  }
+}

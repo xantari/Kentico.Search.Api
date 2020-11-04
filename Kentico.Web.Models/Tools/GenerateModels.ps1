@@ -1,0 +1,2 @@
+﻿dotnet tool restore
+dotnet tool run KontentModelGenerator --DeliveryOptions:UseSecureAccess true --DeliveryOptions:SecureAccessApiKey "" -p "" -o "..\ContentTypes" -n "Kentico.Web.Models" -g true -s true -f "Generated" -b "ContentTypeBase"

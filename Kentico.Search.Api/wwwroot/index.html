@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Kentico Search API</title>
+</head>
+<body>
+  <div id="targetDiv"></div>
+  <script src="js/showdown.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var client = new XMLHttpRequest();
+      client.open('GET', 'ConsumerReadme.md');
+      client.onreadystatechange = function () {
+        target = document.getElementById('targetDiv'),
+          converter = new showdown.Converter(),
+          html = converter.makeHtml(client.responseText);
+        target.innerHTML = html;
+      }
+      client.send();
+    });
+  </script>
+</body>
+</html>

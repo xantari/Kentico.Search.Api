@@ -1,0 +1,34 @@
+{
+  "runtime": "NetCore22",
+  "defaultVariables": null,
+  "documentGenerator": {
+    "fromDocument": {
+      "json": "",
+      "url": "https://localhost:5001/swagger/v1/swagger.json",
+      "output": null
+    }
+  },
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "clientBaseClass": "ClientBase", //name of your client base class
+      "configurationClass": null,
+      "useBaseUrl": true,
+      "generateBaseUrlProperty": false,
+      "generateClientClasses": true,
+      "generateClientInterfaces": true,
+      "useHttpClientCreationMethod": true,
+      "disposeHttpClient": true,
+      "httpClientType": "System.Net.Http.HttpClient",
+      "useHttpRequestMessageCreationMethod": true,
+      "injectHttpClient": true,
+      "clientClassAccessModifier": "public",
+      "typeAccessModifier": "public", //make your models and client interfaces public
+      "generateContractsOutput": true, //generate contacts in a separte file
+      "contractsNamespace": "Kentico.Search.Api.Client.Contracts", //contracts namespace
+      "contractsOutputFilePath": "Contracts.g.cs",
+      "namespace": "Kentico.Search.Api.Client", //clients namespace
+      "output": "Client.g.cs",
+      "datetimetype": "System.DateTime"
+    }
+  }
+}

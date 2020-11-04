@@ -1,0 +1,6 @@
+  "Serilog": {
+    "Properties": {
+      "Application": "Kentico.Search.Api"
+    }
+  }
+}
