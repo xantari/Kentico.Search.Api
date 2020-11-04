@@ -1,4 +1,4 @@
-﻿using Kentico.Common.Core.Extensions;
+﻿using Kentico.Common.Extensions;
 using Kentico.Search.Api.Models;
 using Kentico.Search.Api.Models.Enums;
 using Kentico.Search.Api.Models.RequestModels;

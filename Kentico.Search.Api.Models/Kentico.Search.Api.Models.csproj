@@ -34,8 +34,4 @@
       <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Kentico.Common.Core\Kentico.Common.Core.csproj" />
-    </ItemGroup>
-
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kentico.Common.Core.Extensions
+namespace Kentico.Common.Extensions
 {
     public static class DateTimeExtensions
     {
