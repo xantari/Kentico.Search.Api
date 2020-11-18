@@ -6,6 +6,10 @@ This code sample is to provide the framework for creating an Azure Search based 
 
 Modifications to the code base will be needed depending on your environment / Kentico Kontent models. This is not a turn key solution, but will get you about 90% on your way to having search capabilities on your application or website that relies on Kentico Kontent data.
 
+This repository is heavily geared towards website search, but could be adapted for other content search scenarios.
+
+This repository is a snapshot of working code in a production website that was developed using Kentico Kontent. Pull requests / Bug Reports are welcome.
+
 # Project Structure
 
 - Kentico.Search.Api - Web API Endpoint
